@@ -15,12 +15,12 @@ disk: edit.save()
 
 # Link and navigation
 link open: user.vscode("editor.action.openLink")
-go implementation: user.vscode("editor.action.goToImplementation")
+ample: user.vscode("editor.action.goToImplementation")
 
 # Emmet and formatting
 retag: user.vscode("editor.emmet.action.updateTag")
 reflow: user.vscode("rewrap.rewrapComment")
-file new: user.vscode("andreas.newFile")
+dock make: user.vscode("andreas.newFile")
 
 # Merge conflicts
 conflict accept: user.vscode("merge-conflict.accept.selection")
