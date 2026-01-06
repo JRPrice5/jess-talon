@@ -1,0 +1,287 @@
+language: csharp
+---
+
+name: interfaceDeclaration
+phrase: interface
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+interface $1
+{
+    $0
+}
+---
+
+name: classDeclaration
+phrase: class
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+class $1
+{
+    $0
+}
+---
+
+name: publicClassDeclaration
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+public class $1
+{
+    $0
+}
+---
+
+name: enumDeclaration
+phrase: enum
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+enum $1
+{
+    $0
+}
+---
+
+name: typedConstAssignment
+phrase: constant
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+const $2 $1 = $0;
+---
+
+name: typedVariableAssignment
+phrase: variable
+insertionScope: statement
+
+$1.insertionFormatter: PRIVATE_CAMEL_CASE
+-
+$2 $1 = $0;
+---
+
+name: privateFieldDeclaration
+insertionScope: statement
+
+$1.insertionFormatter: PRIVATE_CAMEL_CASE
+-
+private $2 $1;
+---
+
+name: publicPropertyDeclaration
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+public $2 $1 { get; set; }
+---
+
+name: privatePropertyDeclaration
+insertionScope: statement
+
+$1.insertionFormatter: PRIVATE_CAMEL_CASE
+-
+private $2 $1 { get; set; }
+---
+
+name: functionDeclaration
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+$3 $1($2)
+{
+    $0
+}
+---
+
+name: privateMethodDeclaration
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+private $3 $1($2)
+{
+    $0
+}
+---
+
+name: protectedMethodDeclaration
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+protected $3 $1($2)
+{
+    $0
+}
+---
+
+name: publicMethodDeclaration
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+public $3 $1($2)
+{
+    $0
+}
+---
+
+name: asyncMethodDeclaration
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+public async Task<$3> $1($2)
+{
+    $0
+}
+---
+
+name: privateAsyncMethodDeclaration
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+private async Task<$3> $1($2)
+{
+    $0
+}
+---
+
+name: staticMethodDeclaration
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+public static $3 $1($2)
+{
+    $0
+}
+---
+
+name: lambdaExpression
+insertionScope: statement
+
+$1.insertionFormatter: PRIVATE_CAMEL_CASE
+-
+var $1 = ($2) => $0;
+---
+
+name: actionLambda
+insertionScope: statement
+
+$1.insertionFormatter: PRIVATE_CAMEL_CASE
+-
+Action<$2> $1 = ($3) => $0;
+---
+
+name: funcLambda
+insertionScope: statement
+
+$1.insertionFormatter: PRIVATE_CAMEL_CASE
+-
+Func<$2, $3> $1 = ($4) => $0;
+---
+
+name: property
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+public $2 $1 { get; set; }
+---
+
+name: item
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+$1 = $0,
+---
+
+name: structDeclaration
+phrase: struct
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+struct $1
+{
+    $0
+}
+---
+
+name: recordDeclaration
+phrase: record
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+record $1($0);
+---
+
+name: tryCatchStatement
+phrase: try catch
+insertionScope: statement
+-
+try
+{
+    $1
+}
+catch (Exception ex)
+{
+    $0
+}
+---
+
+name: forEachStatement
+phrase: for each
+insertionScope: statement
+
+$1.insertionFormatter: PRIVATE_CAMEL_CASE
+-
+foreach (var $1 in $2)
+{
+    $0
+}
+---
+
+name: usingStatement
+phrase: using
+insertionScope: statement
+-
+using ($1)
+{
+    $0
+}
+---
+
+name: namespaceDeclaration
+phrase: namespace
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+namespace $1
+{
+    $0
+}
+---
+
+name: fileScopedNamespace
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+namespace $1;
+
+$0
+---

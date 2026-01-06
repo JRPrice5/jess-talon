@@ -1,0 +1,16 @@
+list: user.system_paths
+hostname: TABLET-N2T2POQL
+-
+user: C:\Users\John.Moore.Admin
+desktop: C:\Users\John.Moore.Admin\Desktop
+desk: C:\Users\John.Moore.Admin\Desktop
+documents: C:\Users\John.Moore.Admin\Documents
+docks: C:\Users\John.Moore.Admin\Documents
+downloads: C:\Users\John.Moore.Admin\Downloads
+music: C:\Users\John.Moore.Admin\Music
+pictures: C:\Users\John.Moore.Admin\Pictures
+videos: C:\Users\John.Moore.Admin\Videos
+talon home: C:\Users\John.Moore.Admin\AppData\Roaming\talon
+talon recordings: C:\Users\John.Moore.Admin\AppData\Roaming\talon\recordings
+talon user: C:\Users\John.Moore.Admin\AppData\Roaming\talon\user
+profile: C:\Users\John.Moore.Admin

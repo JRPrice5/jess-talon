@@ -1,0 +1,16 @@
+name: parameterDeclaration
+phrase: param
+insertionScope: statement
+---
+
+language: javascript | javascriptreact
+-
+$1
+---
+
+language: typescript | typescriptreact
+
+$1.insertionFormatter: PRIVATE_CAMEL_CASE
+-
+$1: $0
+---

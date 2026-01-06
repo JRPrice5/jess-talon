@@ -1,0 +1,13 @@
+language: javascript | typescript | javascriptreact | typescriptreact
+---
+
+name: constObjectDeclaration
+phrase: object
+insertionScope: statement
+
+$1.insertionFormatter: PRIVATE_CAMEL_CASE
+-
+const $1 = {
+    $0
+};
+---

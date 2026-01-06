@@ -1,0 +1,101 @@
+language: typescript | typescriptreact
+---
+
+name: interfaceDeclaration
+phrase: interface
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+interface $1 {
+    $0
+}
+---
+
+name: typeDeclaration
+phrase: type
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+type $1 = $0;
+---
+
+name: typeObjectDeclaration
+phrase: type object
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+type $1 = {
+    $0
+};
+---
+
+name: typedArrowFunction
+phrase: arrow
+insertionScope: statement
+
+$1.insertionFormatter: PRIVATE_CAMEL_CASE
+-
+const $1 = ($2): $3 => $0;
+---
+
+name: typedConstAssignment
+phrase: constant
+insertionScope: statement
+
+$1.insertionFormatter: PRIVATE_CAMEL_CASE
+-
+const $1: $2 = $0;
+---
+
+name: typedLetAssignment
+phrase: variable
+insertionScope: statement
+
+$1.insertionFormatter: PRIVATE_CAMEL_CASE
+-
+let $1: $2 = $0;
+---
+
+name: enumDeclaration
+phrase: enum
+insertionScope: statement
+
+$1.insertionFormatter: PUBLIC_CAMEL_CASE
+-
+enum $1 {
+    $0
+}
+---
+
+name: privateMethodDeclaration
+insertionScope: statement
+
+$1.insertionFormatter: PRIVATE_CAMEL_CASE
+-
+private $1($2): $3 {
+    $0
+}
+---
+
+name: protectedMethodDeclaration
+insertionScope: statement
+
+$1.insertionFormatter: PRIVATE_CAMEL_CASE
+-
+protected $1($2): $3 {
+    $0
+}
+---
+
+name: publicMethodDeclaration
+insertionScope: statement
+
+$1.insertionFormatter: PRIVATE_CAMEL_CASE
+-
+public $1($2): $3 {
+    $0
+}
+---

@@ -1,0 +1,19 @@
+list: user.code_common_function
+code.language: javascript
+code.language: typescript
+code.language: javascriptreact
+code.language: typescriptreact
+-
+
+math abs: Math.abs
+object entries: Object.entries
+fetch: fetch
+math floor: Math.floor
+object from entries: Object.fromEntries
+object keys: Object.keys
+console log: console.log
+math max: Math.max
+math min: Math.min
+console print: console.log
+math round: Math.round
+object values: Object.values
