@@ -1,0 +1,19 @@
+tag: user.vscode
+-
+
+# Commands without targets (Pokey's shortcuts)
+blast: edit.undo()
+yes indeed: edit.redo()
+disk: edit.save()
+toggle: user.vscode("extension.toggle")
+
+# Commands that work at cursor position
+open: user.vscode("editor.action.openLink")
+ample: user.vscode("editor.action.goToImplementation")
+retag: user.vscode("editor.emmet.action.updateTag")
+reflow: user.vscode("rewrap.rewrapComment")
+dock make: user.vscode("andreas.newFile")
+
+# Merge conflict commands (work at cursor)
+accept: user.vscode("merge-conflict.accept.selection")
+accept both: user.vscode("merge-conflict.accept.both")

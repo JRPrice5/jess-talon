@@ -1,0 +1,68 @@
+Spoken form, Cursorless identifier
+append, addSelection
+append post, addSelectionAfter
+append pre, addSelectionBefore
+bottom, scrollToBottom
+split, breakLine
+break point, toggleLineBreakpoint
+bring, replaceWithTarget
+apply, callAsFunction
+carve, cutToClipboard
+center, scrollToCenter
+change, clearAndSetSelection
+clear, clearAndSetSelection
+chuck, remove
+ditch, remove
+clone, insertCopyAfter
+clone up, insertCopyBefore
+comment, toggleLineComment
+copy, copyToClipboard
+crown, scrollToTop
+decrement, decrement
+dedent, outdentLine
+falling, revealDefinition
+drink, editNewLineBefore
+spike, insertEmptyLineBefore
+extract, extractVariable
+flash, flashTargets
+float, insertEmptyLineAfter
+fold, foldRegion
+falling, followLink
+follow split, followLinkAside
+form, applyFormatter
+git accept, gitAccept
+git discard, gitRevert
+git stage, gitStage
+git unstage, gitUnstage
+give, deselect
+highlight, highlight
+hover, showHover
+increment, increment
+indent, indentLine
+inspect, showDebugHover
+join, joinLines
+move, moveToTarget
+paste|sling, pasteFromClipboard
+phones, nextHomophone
+post, setSelectionAfter
+pour, editNewLineAfter
+pre, setSelectionBefore
+puff, insertEmptyLinesAround
+quick fix, showQuickFix
+reference, showReferences
+rename, rename
+switch, rewrap
+reverse, reverseTargets
+scout, findInDocument
+scout all, findInWorkspace
+shuffle, randomizeTargets
+snip, insertSnippet
+snip make, generateSnippet
+sort, sortTargets
+swap, swapTargets
+take, setSelection
+type deaf, revealTypeDefinition
+unfold, unfoldRegion
+wrap, wrapWithPairedDelimiter
+quick list, experimentalListCodeActions
+quick new file, experimentalMoveToNewFile

@@ -1,0 +1,5 @@
+Spoken form,VSCode command
+open link to,issue.openGithubPermalink
+copy link to,issue.copyGithubPermalink
+copy markdown link to,issue.copyMarkdownGithubPermalink
+pilot add,github.copilot.chat.attachSelection
